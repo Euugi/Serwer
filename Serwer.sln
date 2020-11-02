@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klient", "Klient\Klient.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteka_klas", "Biblioteka_klas\Biblioteka_klas.csproj", "{3284544F-D932-48A6-B808-6A87376051AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlasaAbstrakcyjna", "KlasaAbstrakcyjna\KlasaAbstrakcyjna.csproj", "{9DA5736D-1F99-46D8-8395-4F2397689AF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3284544F-D932-48A6-B808-6A87376051AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3284544F-D932-48A6-B808-6A87376051AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3284544F-D932-48A6-B808-6A87376051AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA5736D-1F99-46D8-8395-4F2397689AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA5736D-1F99-46D8-8395-4F2397689AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA5736D-1F99-46D8-8395-4F2397689AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA5736D-1F99-46D8-8395-4F2397689AF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

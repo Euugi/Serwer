@@ -1,12 +1,18 @@
-﻿using System;
+﻿
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace ClassLibraryLab2
 {
     public abstract class ServerTcp
     {
 
-        IPAddress ipAddress;
+        IPAddress ip;
         int port;
         int buffer_size = 1024;
         bool is_running;
@@ -21,9 +27,9 @@ namespace ClassLibraryLab2
         }
         public IPAddress Ip
         {
-            get => ipAddress; set
+            get => ip; set
             {
-                if (!is_running) ipAddress = value; else throw new Exception("Nie mozna zmieniac ip gdy serwer jest uruchomiony!");
+                if (!is_running) ip = value; else throw new Exception("Nie mozna zmieniac ip gdy serwer jest uruchomiony!");
             }
         }
 
@@ -46,14 +52,14 @@ namespace ClassLibraryLab2
             Ip = ip;
             if (!checkPort())
             {
-                Port = 7000;
-                throw new Exception("Nieprawidlowy numer portu, ustawione na 7000");
+                Port = 6000;
+                throw new Exception("Nieprawidlowy numer portu, ustawione na 6000");
             }
 
         }
         protected void StartListening()
         {
-            listener = new TcpListener(ipAddress, port);
+            listener = new TcpListener(ip, port);
             listener.Start();
 
         }
